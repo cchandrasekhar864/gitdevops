@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">XYZ Bank Application and Swag Test Automation Suite</th></tr>
+<tr><td><a href="#t0">XYZ Bank and Swag Test Applications</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">2,127</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">XYZ Bank Application and Swag Test Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">XYZ Bank and Swag Test Applications &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.quest.care.FirstTC</td><td><a href="#m0">tearDown</a></td><td rowspan="1">1680689241008</td><td rowspan="1">6</td></tr><tr><th colspan="4">XYZ Bank and Swag Test Applications &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.quest.care.FirstTC</td><td><a href="#m1">addnewcustomer</a></td><td rowspan="1">1680689239309</td><td rowspan="1">1690</td></tr><tr><th colspan="4">XYZ Bank and Swag Test Applications &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">com.quest.care.FirstTC</td><td><a href="#m2">endreport</a></td><td rowspan="1">1680689241031</td><td rowspan="1">-1680689241031</td></tr><tr class="skippedeven"><td><a href="#m3">tearDown</a></td><td rowspan="2">1680689241028</td><td rowspan="2">-1680689241028</td></tr><tr class="skippedeven"><td><a href="#m4">tearDown</a></td></tr><tr><th colspan="4">XYZ Bank and Swag Test Applications &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.quest.care.FirstTC</td><td><a href="#m5">banktranscation</a></td><td rowspan="1">1680689241019</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">deletecustomer</a></td><td rowspan="1">1680689241025</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>XYZ Bank and Swag Test Applications</h2><h3 id="m0">com.quest.care.FirstTC#tearDown</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=addnewcustomer status=FAILURE method=FirstTC.addnewcustomer()[pri:0, instance:com.quest.care.FirstTC@3835c46] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;ss&quot; is null
+	at com.quest.care.FirstTC.getscreenshot(FirstTC.java:66)
+	at com.quest.care.FirstTC.tearDown(FirstTC.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.quest.care.FirstTC#addnewcustomer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 111.0.5563.147 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
+System info: host: &apos;LAPTOP-3PS26KQU&apos;, ip: &apos;169.254.156.144&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	(No symbol) [0x0119F243]
+	(No symbol) [0x01127FD1]
+	(No symbol) [0x0101D04D]
+	(No symbol) [0x0103F6B4]
+	(No symbol) [0x0103A97C]
+	(No symbol) [0x010382E9]
+	(No symbol) [0x0106F056]
+	(No symbol) [0x0106EB2A]
+	(No symbol) [0x01068386]
+	(No symbol) [0x0104163C]
+	(No symbol) [0x0104269D]
+	GetHandleVerifier [0x01439A22+2655074]
+	GetHandleVerifier [0x0142CA24+2601828]
+	GetHandleVerifier [0x01248C0A+619850]
+	GetHandleVerifier [0x01247830+614768]
+	(No symbol) [0x011305FC]
+	(No symbol) [0x01135968]
+	(No symbol) [0x01135A55]
+	(No symbol) [0x0114051B]
+	BaseThreadInitThunk [0x762F7D69+25]
+	RtlInitializeExceptionChain [0x7713B74B+107]
+	RtlClearBits [0x7713B6CF+191]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.quest.health.BrowserSetUp.getWebDriver(BrowserSetUp.java:24)
+	at com.quest.health.TestBase.initialization(TestBase.java:47)
+	at com.quest.care.FirstTC.addnewcustomer(FirstTC.java:107)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.quest.care.FirstTC#endreport</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.quest.care.FirstTC#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.quest.care.FirstTC#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.quest.care.FirstTC#banktranscation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;ss&quot; is null
+	at com.quest.care.FirstTC.getscreenshot(FirstTC.java:66)
+	at com.quest.care.FirstTC.tearDown(FirstTC.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.quest.care.FirstTC#deletecustomer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;ss&quot; is null
+	at com.quest.care.FirstTC.getscreenshot(FirstTC.java:66)
+	at com.quest.care.FirstTC.tearDown(FirstTC.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
